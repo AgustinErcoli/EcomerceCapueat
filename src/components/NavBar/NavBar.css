@@ -1,7 +1,7 @@
 .NavBar{
     background-color: #009d7c;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
     align-items: center;
     height: 100%;
 }
@@ -23,5 +23,11 @@
 .NavBar__menu{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.brand{
+    display: grid;
+    grid-template-columns: 20% 80%;
     align-items: center;
 }
