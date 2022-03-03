@@ -1,11 +1,12 @@
 import React from 'react'
 import './CartWidget.css';
+import carrito from '../../imagenes/carrito.png'
 
 function CartWidget() {
   return (
     <div>
       <a href="/" className="boton">
-        <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="" className="icono"></img>
+        <img src={carrito} alt="carrito" className="icono"></img>
       </a>
     </div>
   )

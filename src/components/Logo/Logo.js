@@ -1,9 +1,12 @@
 import React from 'react'
 import './Logo.css';
+import capueat from '../../imagenes/logoEmprendimiento.png'
 
 function Logo() {
   return (
-    <div><img src="../ProyectoFinal/imagenes/logoCapueat.png" className="logo"></img></div>
+    <div>
+      <a href='/'><img src={capueat} alt="logo" className="logo"></img></a>
+    </div>
   )
 }
 

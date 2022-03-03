@@ -1,5 +1,5 @@
 import './App.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
     <NavBar />
-    <ItemListContainer productos='Productos' especiales='Rolls Especiales' vegetarianos='Rolls Vegetarianos'/>
+    <ItemListContainer productos='Productos' especiales='Rolls Especiales' comb='Combos'/>
     </div>
   );
 }
