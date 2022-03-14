@@ -1,12 +1,14 @@
 import './ItemDetail.css';
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ prod }) => {
 
 
       return (
         <section>
-        <p>{item.title}</p>
-        <img src={item.img} alt={item.title}></img>
+        <p>{prod.title}</p>
+        <img src={prod.pictureURL} alt={prod.title}></img>
+        <p>{prod.description}</p>
+        <p>${prod.price}</p>
         </section>
       )
     }

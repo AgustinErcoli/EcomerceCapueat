@@ -1,18 +1,18 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
 import './ItemDetailContainer.css';
-import { getFetch } from '../../helpers/getFetch';
+import getItem from '../../helpers/getFetch';
 
 
-const ItemDetailContainer = () => {
+function ItemDetailContainer() {
     const [loading, setLoading] = useState(false);
-    const [prod, setProd] = useState();
+    const [prod, setProd] = useState([]);
   
     
     useEffect(() => {
       setLoading(true)
-      getFetch()
-        .then(res => setProd(res.find(product => product.id === 1)))
+      getItem( )
+        .then(res => setProd(res.find(product => product.id === '1')))
         .finally(
           setLoading(false)
         )
@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
               <h1>Cargando...</h1>
             </div>
             :
-            <ItemDetail item={prod} />
+              <ItemDetail key={prod.id} prod={prod} />
         }
       </>
     )
