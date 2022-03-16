@@ -20,6 +20,7 @@
 
 .cards__body{
     background-color: #009d7c;
+    color: black;
 }
 
 .cards__title{
@@ -38,8 +39,20 @@
     border-top-style: solid;
     border-width: 1px;
     background-color: #009d7c;
+    color: black;
+    border-radius: 5px;
 }
 
 .cards__stock{
     font-size: 16px;
+}
+
+.cards__button{
+    background-color: #009d7c;
+    border-color: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

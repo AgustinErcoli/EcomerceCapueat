@@ -5,7 +5,7 @@ import capueat from '../../imagenes/logoEmprendimiento.png'
 function Logo() {
   return (
     <div>
-      <a href='/'><img src={capueat} alt="logo" className="logo"></img></a>
+      <img src={capueat} alt="logo" className="logo" />
     </div>
   )
 }
