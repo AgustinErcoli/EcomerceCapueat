@@ -19,3 +19,15 @@
 .count{
     font-style: #009d7c;
 }
+
+.button{
+    background-color: #009d7c;
+    border-color: green;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-width: 3px;
+    border-radius: 5px;
+}

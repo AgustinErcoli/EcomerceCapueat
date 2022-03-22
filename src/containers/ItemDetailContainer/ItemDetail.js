@@ -15,6 +15,10 @@ const ItemDetail = ({ prod }) => {
         setCount(count-1)
     }
 
+    const onAdd = (cantidad)=>{
+      console.log(`Agregaste ${count} productos`)
+    }
+
 
       return (
         <div className='detalle'>
@@ -25,10 +29,11 @@ const ItemDetail = ({ prod }) => {
             <div>
               <p>{prod.title}</p>
               <p>{prod.description}</p>
+              <p>En stock: {prod.stock}</p>
               <p>${prod.price}</p>
             </div>
             <div>
-              <ItemCount count={count} sumar={sumar} restar={restar} stock={prod.stock} initial={1} />
+              <ItemCount count={count} sumar={sumar} restar={restar} stock={prod.stock} initial={1} onAdd={onAdd}/>
             </div>
           </div>
          
