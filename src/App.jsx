@@ -4,22 +4,23 @@ import ItemListContainer from './containers/ItemListContainer/ItemListContainer'
 import NavBar from './components/NavBar/NavBar';
 import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
-
+import CartContextProvider from './context/cartContext';
+   
 function App() {
 
   return (
-    <BrowserRouter>
-      <div>
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<ItemListContainer productos='Productos' especiales='Rolls Especiales' comb='Combos'/>} />
-        <Route path='/categoria/:categoriaId' element={<ItemListContainer productos='Productos' especiales='Rolls Especiales' comb='Combos'/>} />
-        <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
-        <Route path='/*' element={<Navigate to='/' replace />} />
-        <Route path='/cart' element={<Cart />} />
-      </Routes>
-      </div>
-    </BrowserRouter>
+    <CartContextProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer productos='Productos' especiales='Rolls Especiales' comb='Combos'/>} />
+          <Route path='/categoria/:categoriaId' element={<ItemListContainer productos='Productos' especiales='Rolls Especiales' comb='Combos'/>} />
+          <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
+          <Route path='/*' element={<Navigate to='/' replace />} />
+          <Route path='/cart' element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
+    </CartContextProvider>
   );
 }
 
