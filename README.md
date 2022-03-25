@@ -7,3 +7,5 @@ Esta es una pagina en la que la gente puede ordenar sushi para cualquier dia de 
 ![image](https://github.com/AgustinErcoli/EcomerceCapueat/blob/main/src/Media/Animation.gif)
 
 ### `npm install react-router-dom`
+
+### `npm install react-icons`
