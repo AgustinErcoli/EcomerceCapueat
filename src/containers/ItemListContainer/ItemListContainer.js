@@ -1,12 +1,12 @@
 import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css';
 
-function ItemListContainer({productos, comb}) {
+function ItemListContainer() {
 
     return (
         <div className="contenedor">
-            <h2>{ productos }</h2>
-            <h2>{ comb }</h2>
+            <h2>Productos</h2>
+            <h2>Combos</h2>
             <ItemList />
         </div>
     )}

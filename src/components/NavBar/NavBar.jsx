@@ -20,10 +20,10 @@ function NavBar() {
       </NavLink>
       <div className="NavBar__menu">
         <div>
-          <NavLink to='categoria/clasicos'><button className='NavBar__button'>Clasicos</button></NavLink>
-          <NavLink to='categoria/vegetarianos'><button className='NavBar__button'>Vegetarianos</button></NavLink>
-          <NavLink to='categoria/veganos'><button className='NavBar__button'>Veganos</button></NavLink>
-          <NavLink to='categoria/especiales'><button className='NavBar__button'>Especiales</button></NavLink>
+          <NavLink to='category/clasicos'><button className='NavBar__button'>Clasicos</button></NavLink>
+          <NavLink to='category/vegetarianos'><button className='NavBar__button'>Vegetarianos</button></NavLink>
+          <NavLink to='category/veganos'><button className='NavBar__button'>Veganos</button></NavLink>
+          <NavLink to='category/especiales'><button className='NavBar__button'>Especiales</button></NavLink>
         </div>
       </div>
       <div className='cartWidget'>
