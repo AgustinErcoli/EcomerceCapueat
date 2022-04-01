@@ -9,3 +9,7 @@ Esta es una pagina en la que la gente puede ordenar sushi para cualquier dia de 
 ### `npm install react-router-dom`
 
 ### `npm install react-icons`
+
+Instala una libreria de iconos
+
+### `npm install firebase`
