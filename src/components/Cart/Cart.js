@@ -6,17 +6,15 @@ import {
   collection, 
   getFirestore,
 } from "firebase/firestore"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function Cart() {
   const { cartList, clear, deleItemCart, totalPrice } = useCartContext()
-
+const [id, setId] = useState('')
   const [dataForm, setDataForm] = useState({
     email: '', name: '', phone: ''
   })
-
-  const [id, setId] = useState('')
 
     const generarOrden = async (e)=>{
 
@@ -48,7 +46,6 @@ function Cart() {
         [e.target.name]: e.target.value
       })
     }
-
 
 
   return (
@@ -102,16 +99,16 @@ function Cart() {
                     onChange={handleChange}
                 /><br />
                 <input 
-                    type='text' 
+                    type='number' 
                     name='phone'
-                    placeholder='tel' 
+                    placeholder='telephone' 
                     value={dataForm.phone}
                     onChange={handleChange}
                 /><br/>
                 <input 
                     type='email' 
                     name='email'
-                    placeholder='email' 
+                    placeholder='example@gmail.com' 
                     value={dataForm.email}
                     onChange={handleChange}
                 /><br/>
