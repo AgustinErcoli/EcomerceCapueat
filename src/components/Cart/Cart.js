@@ -6,7 +6,7 @@ import {
   collection, 
   getFirestore,
 } from "firebase/firestore"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 
 function Cart() {
@@ -37,7 +37,7 @@ const [id, setId] = useState('')
       addDoc(queryCollectionSet, orden)
       .then(resp => setId(resp.id))
       .catch(err => console.error(err))
-      .finally(() => console.log('termino'))
+      .finally(() => console.log('terminado'))
     }
 
     const handleChange = (e) => {
